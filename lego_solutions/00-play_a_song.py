@@ -15,25 +15,40 @@ eighth_note=133
 #https://www.ninsheetmusic.org/download/pdf/1945
 #http://pages.mtu.edu/~suits/notefreqs.html
 
-e4_note=659.25
-g4_note=392.00
-e5_note=659.25
-c5_note=523.25
-d5_note=587.33
-g5_note=783.99
+notes={
+    'c3':130.81,
+    'd3':146.83,
+    'e3':164.81,
+    'f3':174.61,
+    'g3':196.00,
+    'a3':220.00,
+    'b3':246.94,
+    'c4':261.63,
+    'd4':293.66,
+    'e4':329.63,
+    'f4':349.23,
+    'g4':392.00,
+    'a4':440.00,
+    'b4':493.88,
+    'c5':523.25,
+    'd5':587.33,
+    'e5':659.25,
+    'f5':698.46,
+    'g5':783.99,
+    'a5':880.00,
+    'b5':987.77,
+    'c6':1046.50,
+    'd6':1174.66,
+    'e6':1318.51,
+    'f6':1396.91,
+    'g6':1567.98,
+    'a6':1760.00,
+    'b6':1975.53
+}
 
-e5_note=659.25
-g5_note=783.99
-e6_note=1318.51
-c6_note=1046.50
-d6_note=1174.66
-g6_note=1567.98
-
-
-
-brick.sound.beep(e5_note,eighth_note,5)
-brick.sound.beep(g5_note,eighth_note,5)
-brick.sound.beep(e6_note,eighth_note,5)
-brick.sound.beep(c6_note,eighth_note,5)
-brick.sound.beep(d6_note,eighth_note,5)
-brick.sound.beep(g6_note,eighth_note,5)
+brick.sound.beep(notes['e5'],eighth_note,5)
+brick.sound.beep(notes['g5'],eighth_note,5)
+brick.sound.beep(notes['e6'],eighth_note,5)
+brick.sound.beep(notes['c6'],eighth_note,5)
+brick.sound.beep(notes['d6'],eighth_note,5)
+brick.sound.beep(notes['g6'],eighth_note,5)
